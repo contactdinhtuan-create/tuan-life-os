@@ -3,14 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#7567ee" />
-    <meta name="description" content="LifeOS của Tuấn — quản lý công việc, mục tiêu, thói quen và học tập." />
+    <meta name="theme-color" content="#136f63" />
+    <meta name="description" content="Ứng dụng quản lý tài sản cá nhân và đầu tư tăng trưởng với chiến lược, mục tiêu, danh mục và câu hỏi khám phá nhu cầu." />
     <link rel="icon" href="./favicon.svg" />
-    <title>LifeOS của Tuấn</title>
-    <script type="module" crossorigin src="./index-BcrtOa5e.js"></script>
-    <link rel="stylesheet" crossorigin href="./index-DWpbJd-n.css">
+    <title>WealthOS cá nhân</title>
+    <link rel="stylesheet" href="./wealth-os.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <main class="app-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">WEALTHOS · BẢN KHỞI ĐẦU</p>
+          <h1>Quản lý tài sản, đầu tư tăng trưởng và ra quyết định có kỷ luật.</h1>
+          <p class="lead">Bắt đầu bằng cách hiểu bức tranh tài chính hiện tại, xác định mục tiêu, đo khẩu vị rủi ro rồi mới chọn chiến lược đầu tư phù hợp.</p>
+          <div class="hero-actions">
+            <a class="primary" href="#discovery">Trả lời câu hỏi đầu vào</a>
+            <a class="secondary" href="#roadmap">Xem lộ trình 30 ngày</a>
+          </div>
+        </div>
+        <aside class="score-card" aria-label="Tổng quan tài chính mẫu">
+          <span>Sức khoẻ tài sản</span>
+          <strong>72/100</strong>
+          <div class="meter"><i></i></div>
+          <ul>
+            <li><b>35%</b> Quỹ an toàn</li>
+            <li><b>45%</b> ETF/cổ phiếu tăng trưởng</li>
+            <li><b>20%</b> Tiền mặt & cơ hội</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="grid" aria-label="Các module chính">
+        <article class="card">
+          <span class="icon">◎</span>
+          <h2>1. Bản đồ tài sản</h2>
+          <p>Ghi nhận tài sản, nợ, dòng tiền, quỹ khẩn cấp và tỷ lệ phân bổ để biết mình đang đứng ở đâu.</p>
+        </article>
+        <article class="card">
+          <span class="icon">↗</span>
+          <h2>2. Chiến lược tăng trưởng</h2>
+          <p>Chọn chiến lược theo thời gian nắm giữ, mức biến động chịu được và năng lực đóng góp hàng tháng.</p>
+        </article>
+        <article class="card">
+          <span class="icon">⚖</span>
+          <h2>3. Kỷ luật rủi ro</h2>
+          <p>Đặt giới hạn lỗ, tái cân bằng, tỷ trọng tài sản rủi ro và checklist trước mỗi quyết định mua/bán.</p>
+        </article>
+      </section>
+
+      <section id="discovery" class="panel">
+        <div>
+          <p class="eyebrow">CẦN HỎI TRƯỚC KHI XÂY</p>
+          <h2>8 câu hỏi để cá nhân hoá ứng dụng cho bạn</h2>
+          <p>Vì bạn muốn tôi hỏi trước nếu chưa chắc chắn, đây là form khám phá yêu cầu ban đầu. Trả lời các câu này sẽ giúp xác định dashboard, dữ liệu và chiến lược phù hợp.</p>
+        </div>
+        <ol class="questions">
+          <li>Bạn muốn theo dõi những loại tài sản nào: tiền mặt, vàng, chứng khoán, crypto, bất động sản, bảo hiểm hay khoản cho vay?</li>
+          <li>Mục tiêu chính là tăng trưởng tài sản, dòng tiền thụ động, bảo toàn vốn hay chuẩn bị mua nhà/nghỉ hưu?</li>
+          <li>Khung thời gian đầu tư của bạn là dưới 1 năm, 1–3 năm, 3–7 năm hay trên 7 năm?</li>
+          <li>Bạn chịu được mức sụt giảm danh mục tối đa bao nhiêu phần trăm trước khi mất ngủ?</li>
+          <li>Bạn muốn nhập dữ liệu thủ công, import CSV hay kết nối API ngân hàng/sàn chứng khoán sau này?</li>
+          <li>Bạn cần nhắc lịch DCA, tái cân bằng, chốt lời/cắt lỗ hay review danh mục định kỳ?</li>
+          <li>Bạn ưu tiên thị trường Việt Nam, Mỹ, crypto hay danh mục toàn cầu?</li>
+          <li>Ứng dụng chỉ dùng cho cá nhân hay có chia sẻ với vợ/chồng/cố vấn tài chính?</li>
+        </ol>
+      </section>
+
+      <section id="roadmap" class="roadmap">
+        <div class="roadmap-copy">
+          <p class="eyebrow">NÊN BẮT ĐẦU TỪ ĐÂU?</p>
+          <h2>Lộ trình 30 ngày để biến ý tưởng thành sản phẩm dùng được</h2>
+        </div>
+        <div class="steps">
+          <article><b>Tuần 1</b><h3>Thiết kế dữ liệu lõi</h3><p>Tài sản, giao dịch, mục tiêu, danh mục, chiến lược, quy tắc rủi ro và nhật ký quyết định.</p></article>
+          <article><b>Tuần 2</b><h3>Làm dashboard MVP</h3><p>Net worth, allocation, cashflow, hiệu suất, mức lệch phân bổ và cảnh báo việc cần làm.</p></article>
+          <article><b>Tuần 3</b><h3>Thêm chiến lược</h3><p>DCA, tái cân bằng, core-satellite, checklist mua/bán và mô phỏng kịch bản tăng trưởng.</p></article>
+          <article><b>Tuần 4</b><h3>Đo lường & tối ưu</h3><p>Review tháng, nhật ký cảm xúc, phân tích sai lệch kế hoạch và đề xuất hành động kế tiếp.</p></article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
